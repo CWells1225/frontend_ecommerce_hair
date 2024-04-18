@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-// import logo from 
+import hair_logo from '../assets/hair_logo.jpeg';
 import shopping_bag_icon from '../assets/shopping_bag_logo.jpeg';
 import search_icon from '../assets/search_bar.png'; 
 import login_icon from '../assets/profile_logo.jpeg';
@@ -14,30 +15,27 @@ const Navbar = () => {
     <div className='navbar'>
 
      <div className='nav-logo'>
-        {/* <img src={logo} alt='' /> */}
-        <p> Hair Extensions </p>
+     <Link to='/'><img src={hair_logo} alt='' /></Link>
      </div>
 
      <ul className='nav-menu'>
-        <li onClick={()=> {setMenu('about')}}> About Us{menu==='about'?<hr/>:<></>}</li>
-        <li onClick={()=> {setMenu('shop')}}> Shop {menu==='shop'?<hr/>:<></>}</li>
-        <li onClick={()=> { setMenu('contact')}}> Contact Us {menu==='contact'?<hr/>:<></>}</li>
+        <li onClick={()=> {setMenu('about')}}><Link to='/about'> About Us </Link>{menu==='about'?<hr/>:<></>}</li>
+        <li onClick={()=> {setMenu('shop')}}><Link to='/shop'> Shop </Link>{menu==='shop'?<hr/>:<></>}</li>
+        <li onClick={()=> { setMenu('contact')}}> <Link to='/contact'> Contact Us </Link>{menu==='contact'?<hr/>:<></>}</li>
      </ul>
 
      <div className='nav-login-cart'>
-        <ul>
-            <li> 
-            <img src={search_icon} alt='' />
-            </li>
+            <div> 
+            <Link to='/search'><img src={search_icon} alt='' /></Link>
+            </div>
         
-            <li> 
-            <img src={login_icon} alt='' />
-            </li>
+            <div> 
+            <Link to='/login'> <img src={login_icon} alt='' /></Link>
+            </div>
         
-            <li> 
-            <img src={shopping_bag_icon} alt='' />
-            </li>
-        </ul>
+            <div> 
+            <Link to='/cart'><img src={shopping_bag_icon} alt='' /></Link>
+            </div>
      </div>
 
     </div>
