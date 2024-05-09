@@ -15,7 +15,7 @@ const Navbar = () => {
     <div className='navbar'>
 
      <div className='nav-logo'>
-     <Link to='/'><img src={hair_logo} alt='' /></Link>
+     <Link to='/'> Hair Extensions </Link>
      </div>
 
      <ul className='nav-menu'>

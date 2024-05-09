@@ -6,6 +6,8 @@ import Cart from './pages/Cart';
 import Contact from './pages/Contact';
 import Search from './pages/Search';
 import Shop from './pages/Shop';
+import ShippingReturns from './pages/ShippingReturns';
+import Footer from './components/footer/Footer.jsx';
 
 
 
@@ -23,8 +25,11 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/search' element={<Search />} />
           <Route path='/shop' element={<Shop />} />
+          <Route path='/returns' element={<ShippingReturns />} />
+
         </Routes> 
       </div>
+      <Footer />
     </>
   );
 };

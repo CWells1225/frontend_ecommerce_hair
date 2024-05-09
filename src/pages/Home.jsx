@@ -1,7 +1,13 @@
 import React from 'react'; 
+import HomeContent from '../components/headings/HomeContent';
+
 
 const Home = () => {
-    return <h1>Home</h1>;
+    return (
+        <div>
+            <HomeContent/>
+        </div>
+    )
 } ;
 
 export default Home

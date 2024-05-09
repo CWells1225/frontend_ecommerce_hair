@@ -1,0 +1,44 @@
+.header {
+    width: auto;
+    height: 650px;
+    padding-right: 0px;
+    padding-left: 0px;
+    background-image: url('https://t4.ftcdn.net/jpg/06/36/38/87/360_F_636388716_GMIcwSW7j1VfduxVZVY1feXJIidY3aHq.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header p {
+    text-align: center;
+    font: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 900px;
+    padding-top: 400px;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
+.homepage-content {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.homepage-content h2 {
+    font-family: "Questrial", sans-serif;
+}
+
+.best-sellers-products div {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 200px; 
+}
+
+.best-sellers-products img {
+   padding-top: 50px;
+   width: 400px;
+   height: auto;
+}
+
+

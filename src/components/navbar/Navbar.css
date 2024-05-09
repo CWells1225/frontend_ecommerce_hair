@@ -1,28 +1,26 @@
 .navbar {
     display: flex;
     justify-content: space-around;
-    padding: 16px;
     box-shadow: 0 1px 3 px -2px black;
+    margin: 10px;
 }
 
 .nav-logo {
     display: flex;
     align-items: center;
+    padding-left: 50px;
     gap: 10px;
-}
-
-.nav-logo img {
-    height: auto;
-    max-width: 100px;
-    margin-left: 30px;
-}
-
-.nav-logo p {
     color: black;
-    font-family: "Raleway", sans-serif;
+    font-family: "Great Vibes", cursive;
+    font-style: normal;
     font-size: 40px;
     font-weight: 600px;
     cursor: pointer;
+}
+
+.nav-logo a {
+    text-decoration: none;
+    color: black;
 }
 
 .nav-menu {
@@ -31,7 +29,7 @@
     list-style: none;
     gap: 50px;
     color: black;
-    font-family: "Source Serif 4", serif;
+    font-family: "Raleway", sans-serif;
     font-size: 16px;
     font-weight: 500px;
 }
@@ -45,18 +43,24 @@
     cursor: pointer;
 }
 
+.nav-menu li a {
+    text-decoration: none;
+    color: black;
+}
+
 .nav-menu hr {
     border: none;
-    width: 80%;
+    width: 50%;
     height: 3px;
-    border-radius: 10px;
-    background: black;
+    border-radius: 5px;
+    background:#FFC0CB;
 }
 
 .nav-login-cart {
     display: flex;
     align-items: center;
-    gap: 45px;
+    gap: 50px;
+    padding-right: 50px;
 }
 
 .nav-login-cart img {
