@@ -1,0 +1,72 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 1px 3 px -2px black;
+    margin: 10px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    gap: 10px;
+    color: black;
+    font-family: "Great Vibes", cursive;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 600px;
+    cursor: pointer;
+}
+
+.nav-logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: black;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 500px;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-menu hr {
+    border: none;
+    width: 50%;
+    height: 3px;
+    border-radius: 5px;
+    background:#FFC0CB;
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-right: 50px;
+}
+
+.nav-login-cart img {
+    display: inline-flex;
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+}
+   
